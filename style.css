@@ -85,10 +85,10 @@ body{
     line-height:30px;
 }
 #picContainer{
-    height:500px;
-    width: 500px;
+    height:400px;
+    width: 400px;
     border:5px solid aqua;
-    margin:300px 0px 0px 300px;
+    margin:350px 0px 0px 200px;
     border-radius: 500px;
     background-image: url("me.jpg");
     background-repeat:no-repeat;
