@@ -1,0 +1,235 @@
+body{
+    background-color: black;
+    padding:0px;
+    margin:0px;
+}
+#header{
+    border-bottom: 1px solid aqua;
+    height:50px;
+    display:flex;
+    padding:0px 175px 0px 0px;
+    margin:0px;
+    position:fixed;
+    background-color: aqua;
+}
+.headerText{
+    color:black;
+    padding-left: 80px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size:1em;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    text-decoration: none;
+    margin-top:15px;
+}
+.container{
+    height:100vh;
+    width: 99vw;
+    border-bottom:1px solid #333;
+}
+#aboutTextContainer{
+    height:500px;
+    width: 700px;
+    margin:450px 0px 0px 300px;
+}
+#nametext{
+    font-family: "Monoton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:aqua;
+    font-size:8em;
+    margin:0px 30px;
+    padding:0px;
+}
+#streamtext{
+    color:aqua;
+    padding-left: 80px;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-size:2em;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    margin:-20px 100px;
+    padding:0px;
+    letter-spacing: 5px;
+}
+#hiitext{
+    color:aqua;
+    padding-left: 80px;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-size:2em;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    margin:0px 0px -20px 0px;
+    padding:0px;
+    letter-spacing: 2px;
+}
+#quotetext{
+    color:aqua;
+    padding-left: 80px;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-size:1.3em;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    margin:-20px 0px 0px 0px;
+    padding:0px;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height:30px;
+}
+#picContainer{
+    height:500px;
+    width: 500px;
+    border:5px solid aqua;
+    margin:300px 0px 0px 300px;
+    border-radius: 500px;
+    background-image: url("me.jpg");
+    background-repeat:no-repeat;
+    background-size: cover
+}
+.divHeader{
+    color:aqua;
+    padding-left: 80px;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-size:3.5em;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    /* margin:-20px 80px; */
+    padding:50px 0px 0px 860px;
+    /* text-align: center; */
+    letter-spacing: 4px;
+}
+#skillsContainer{
+    height:400px;
+    width: 1200px;
+    margin:100px 370px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.skillList{
+    height:40px;
+    width:200px;
+    border:3px solid aqua;
+    border-radius: 15px;
+    padding:10px 0px 10px 100px;
+}
+.skillName{
+    color:aqua;
+    padding-left: 80px;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-size:2.5em;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    margin:0px;
+    padding:0px;
+}
+.projectContainer{
+    height: 200px;
+    width:1500px;
+    margin:20px 190px 80px 190px;
+    padding:70px 0px 0px 0px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.projecttypefont{
+    color:aqua;
+    padding-left: 80px;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-size:2em;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    margin:0px 0px -20px 0px;
+    padding:0px 0px;
+    letter-spacing: 2px;
+    position:absolute;
+    margin-top:-70px;
+}
+.project{
+    height: 140px;
+    width: 340px;
+    border:2px solid aqua;
+    border-radius:20px;
+    padding:30px 30px;
+    display:flex;
+    background-color: #222;
+}
+#codefusionImg{
+    height:140px;
+    width:120px
+}
+.projectInnerdiv{
+    height:140px;
+    width:250px;
+    margin-left: 20px;
+}
+.projectname{
+    color:aqua;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-size:1.7em;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    margin:30px 0px 5px 0px;
+}
+.projectDescription{
+    color:aqua;
+    font-family: monospace;
+    font-optical-sizing: auto;
+    font-size:0.8em;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    margin-bottom:5px;
+    text-align:center;
+}
+#contactdiv{
+    height:50px;
+    width:70%;
+    background-color: aqua;
+    margin-top:0px;
+    display: flex;
+    padding:20px 0px 0px 30%;
+}
+#skilldiv{
+    height:60vh;
+}
+#projectdiv{
+    height:88vh;
+}
+.material-symbols-outlined {
+  font-variation-settings:'FILL' 0,'wght' 400,'GRAD' 0,'opsz' 24;
+  color:black;
+  height:30px;
+  width:30px;
+  margin:12px 0px 0px 100px;
+  padding:0px;
+}
+.footerText{
+    color:black;
+    padding-left: 30px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size:1em;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+    text-decoration: none;
+    margin:-27px 100px 0px 10px;
+}
