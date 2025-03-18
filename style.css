@@ -233,3 +233,311 @@ body{
     text-decoration: none;
     margin:-27px 100px 0px 10px;
 }
+#portfoliotext{
+    margin: 8px 1200px 0px 0px ; 
+    font-size: 1.5em;
+}
+
+/* Media Queries for Responsiveness */
+@media only screen and (min-resolution: 144dpi) and (max-width: 3072px) {
+    
+    #header {
+        padding: 0 1vw; /* Minimal padding to fit content */
+        height: 50px;
+        max-width: 100vw;
+        overflow-x: hidden;
+        flex-wrap: nowrap; /* Prevent wrapping unless necessary */
+        justify-content: space-between; /* Distribute space evenly */
+    }
+    #portfoliotext{
+        margin: 8px 1000px 0px 0px ; 
+        font-size: 1.5em;
+    }
+    .headerText {
+        padding-left: 0.5rem; /* Reduced padding to keep text visible */
+        font-size: 1em;
+        margin: 15px 30px 0px 0px;
+        white-space: nowrap; /* Prevent text wrapping */
+        flex-shrink: 1; /* Allow shrinking if needed */
+    }
+
+    #aboutTextContainer {
+        width: 35vw;
+        margin: 40vh 100px 0 15vw;
+        height: auto;
+        max-width: 90vw;
+    }
+
+    #nametext {
+        font-size: 7em;
+    }
+
+    #hiitext, #streamtext {
+        font-size: 1.8em;
+        padding-left: 1rem;
+    }
+
+    #quotetext {
+        font-size: 1.2em;
+        padding-left: 1rem;
+        line-height: 1.5em;
+    }
+
+    #picContainer {
+        height: 350px;
+        width: 350px;
+        margin: 35vh 0 0 5vw;
+        max-width: 90vw;
+    }
+
+    .divHeader {
+        font-size: 3em;
+        padding: 3vh 0 0 35vw;
+        max-width: 90vw;
+        margin-left: 150px;
+    }
+
+    #skillsContainer {
+        width: 70vw;
+        margin: 5vh auto;
+        height: 300px;
+        max-width: 95vw;
+    }
+
+    .skillList {
+        width: 18vw;
+        padding: 0.5rem 0 0.5rem 4vw;
+        max-width: 200px;
+    }
+
+    .skillName {
+        font-size: 2.2em;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .projectContainer {
+        width: 80vw;
+        margin: 1vh auto 4vh;
+        padding: 4vh 0 0 0;
+        height: 500px;
+        max-width: 95vw;
+    }
+
+    .projecttypefont {
+        font-size: 1.8em;
+        padding-left: 1rem;
+        max-width: 90vw;
+    }
+
+    .project {
+        width: 30vw;
+        padding: 1.5rem;
+        max-width: 340px;
+    }
+
+    #codefusionImg {
+        height: 120px;
+        width: 100px;
+    }
+
+    .projectInnerdiv {
+        width: 20vw;
+        max-width: 250px;
+    }
+
+    .projectname {
+        font-size: 1.5em;
+        margin: 1.5rem 0 0.3rem 0;
+    }
+
+    .projectDescription {
+        font-size: 0.75em;
+    }
+
+    #contactdiv {
+        padding: 1rem 0 0 20vw;
+        width: 1150px;
+        height: 50px;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .footerText {
+        padding-left: 1rem;
+        font-size: 0.9em;
+        margin: -1.5rem 2rem 0 0.5rem;
+    }
+
+    body {
+        overflow-x: hidden; /* No horizontal scroll */
+        overflow-y: auto; /* Allow vertical scroll */
+    }
+    #projectdiv{
+        height:120vh;
+    }
+}
+
+/* Adjustments for smaller screens (e.g., tablets) */
+@media (max-width: 1024px) {
+    #header {
+        flex-direction: column; /* Stack items vertically */
+        padding: 0.5rem;
+        height: auto;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .headerText {
+        padding-left: 0;
+        margin: 0.3rem 0;
+        text-align: center; /* Center text for visibility */
+    }
+
+    #aboutTextContainer {
+        width: 80%;
+        margin: 15vh auto 0;
+        text-align: center;
+        max-width: 95vw;
+    }
+
+    #picContainer {
+        margin: 10vh auto;
+        height: 300px;
+        width: 300px;
+        max-width: 90vw;
+    }
+
+    .divHeader {
+        padding-left: 0;
+        text-align: center;
+        max-width: 95vw;
+    }
+
+    #skillsContainer {
+        width: 90%;
+        justify-content: center;
+        max-width: 95vw;
+    }
+
+    .skillList {
+        width: 25%;
+        padding: 0.5rem;
+        max-width: 200px;
+    }
+
+    .projectContainer {
+        width: 90%;
+        max-width: 95vw;
+    }
+
+    .project {
+        width: 45%;
+        flex-direction: column;
+        text-align: center;
+        max-width: 340px;
+    }
+
+    .projectInnerdiv {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #codefusionImg {
+        margin: 0 auto;
+    }
+
+    .projecttypefont {
+        padding-left: 0;
+        max-width: 90vw;
+    }
+
+    #contactdiv {
+        padding: 1rem;
+        justify-content: center;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    #nametext {
+        font-size: 5em;
+    }
+
+    #hiitext, #streamtext {
+        font-size: 1.5em;
+        padding-left: 0;
+    }
+
+    #quotetext {
+        font-size: 1em;
+        padding-left: 0;
+    }
+
+    #picContainer {
+        height: 250px;
+        width: 250px;
+    }
+
+    .divHeader {
+        font-size: 2.5em;
+    }
+
+    .skillName {
+        font-size: 1.8em;
+    }
+
+    .project {
+        width: 70%;
+    }
+
+    .projecttypefont {
+        font-size: 1.5em;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    #nametext {
+        font-size: 3em;
+    }
+
+    #hiitext, #streamtext {
+        font-size: 1.2em;
+    }
+
+    #quotetext {
+        font-size: 0.9em;
+    }
+
+    #picContainer {
+        height: 200px;
+        width: 200px;
+    }
+
+    .divHeader {
+        font-size: 2em;
+    }
+
+    .skillList {
+        width: 40%;
+    }
+
+    .skillName {
+        font-size: 1.5em;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .projectname {
+        font-size: 1.2em;
+    }
+
+    .projectDescription {
+        font-size: 0.7em;
+    }
+}
