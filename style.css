@@ -2,11 +2,13 @@ body{
     background: linear-gradient(90deg, #0F2027, #203A43, #2C5364);
     padding:0px;
     margin:0px;
+    height:auto;
     overflow-x: hidden;
 }
 
 body,html{
     scroll-behavior: smooth;
+    max-height: 3500px;
 }
 
 #header{
@@ -49,6 +51,8 @@ body,html{
     font-size:8em;
     margin:0px 30px;
     padding:0px;
+}
+#skillTitle{
 }
 #streamtext{
     color:#c5c5c5;
@@ -260,6 +264,8 @@ body,html{
             text-align: center;
             margin-top:70px;
             margin-bottom: 20px;
+            margin-left:200px;
+            width:80%;
         }
         .projectContainer {
             display: none;
@@ -298,6 +304,125 @@ body,html{
 }
 
 /* Media Queries for Responsiveness */
+
+
+#contactdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #0F2027;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-link {
+    display: flex;
+    font-family: monospace;
+    align-items: center;    justify-content: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+
+
+.footer-link svg {
+    width: 30px;
+    height: 30px;
+    fill: #F5F5F5;
+}
+
+/* Responsive Design */
+
+
+.footerText{
+  margin-top: 2px;
+}
+/* Footer Section */
+#footer {
+    position: absolute;
+    background-color: #203A43;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    top: 2700px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+
+.footer-text {
+    font-size: 1em;
+}
+
+.footer-link svg {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #0F2027;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px #48CFCB;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-family: "Monoton", sans-serif;
+    margin: 0;
+    color: #48CFCB;
+    margin-left:100px;
+    margin-right: 1000px;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #c5c5c5;
+    font-size: 1.3em;
+    font-family:monospace;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    margin-right:130px;
+}
+
+.header-link:hover {
+    color: #48CFCB;
+}
+
+
+
+
+
+
+
+
+
+
 @media only screen and (min-resolution: 144dpi) and (max-width: 3072px) {
     
     #header {
@@ -520,133 +645,237 @@ body,html{
 }
 
 /* Tablets */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-around;
+    }
+    .header-title {
+        margin-left:0px;
+        margin-right: 0px;
+    }
+    .header-link {
+        margin-right:0px;
+    }
+    /* ✅ Adjust Header */
+    #header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
     #nametext {
-        font-size: 5em;
-    }
-
-    #hiitext, #streamtext {
-        font-size: 1.5em;
-        padding-left: 0;
-    }
-
-    #quotetext {
-        font-size: 1em;
-        padding-left: 0;
-    }
-
-    #picContainer {
-        height: 250px;
-        width: 250px;
-    }
-
-    .divHeader {
-        font-size: 2.5em;
-    }
-
-    .skillName {
-        font-size: 1.8em;
-    }
-
-    .project {
-        width: 70%;
-    }
-
-    .projecttypefont {
-        font-size: 1.5em;
-    }
-}
-
-/* Phones */
-@media (max-width: 480px) {
-    #nametext {
+        margin:30px 0px 20px 0px;
         font-size: 3em;
     }
-
-    #hiitext, #streamtext {
-        font-size: 1.2em;
+    .headerText {
+        font-size: 1.5em; /* Adjusted text size for tablets */
+        text-align: center;
+        margin: 5px 0;
     }
 
-    #quotetext {
-        font-size: 0.9em;
-    }
-
-    #picContainer {
-        height: 200px;
-        width: 200px;
-    }
-
-    .divHeader {
-        font-size: 2em;
-    }
-
-    .skillList {
-        width: 40%;
-    }
-
-    .skillName {
-        font-size: 1.5em;
-    }
-
-    .project {
-        width: 90%;
-    }
-
-    .projectname {
-        font-size: 1.2em;
-    }
-
-    .projectDescription {
-        font-size: 0.7em;
-    }
-}
-
-#contactdiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-color: #0F2027;
-    padding: 20px;
-    text-align: center;
-}
-
-.footer-link {
-    display: flex;
-    align-items: center;    justify-content: center;
-    gap: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-    color: #00aced;
-}
-
-.footer-link svg {
-    width: 30px;
-    height: 30px;
-    fill: #F5F5F5;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    #contactdiv {
+    /* ✅ About Section */
+    #aboutdiv {
         flex-direction: column;
         text-align: center;
     }
-    .footer-link {
-        font-size: 14px;
+
+    #picContainer {
+        width: 85%;
+        max-width: 300px;
+        margin-top: 15px;
     }
-    .footer-link svg {
-        width: 25px;
-        height: 25px;
+    .divHeader {
+        padding-left: 0;
+        text-align: center;
+        max-width: 95vw;
+        margin-left:0px;
+    }
+    /* ✅ Skills Section */
+    #skillsContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .skillList {
+        width: 48%;
+        text-align: center;
+        padding: 8px;
+        font-size: 1em;
+    }
+
+    /* ✅ Projects Section */
+     #aboutdiv {
+        margin-bottom: 30px; /* Add space below About section */
+    }
+
+    #projectdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 95%;
+        padding: 20px;
+        margin-top: 30px; /* ✅ Added space above project section */
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        margin: 15px auto;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .project img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .projectTitle {
+        font-size: 1.4em;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .projectDescription {
+        font-size: 1em;
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* ✅ Contact / Footer */
+     #contactdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center align links */
+        gap: 10px; /* Space between links */
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .footer-link {
+        font-size: 1em;
+        margin: 5px 0; /* Ensures spacing between links */
+        text-decoration: none;
+        color: #333;
+        display: block;
+    }
+
+    .footer-link:hover {
+        color: #007bff;
+    }
+
+    /* Ensure footer text is properly aligned */
+    .footer-text {
+        font-size: 0.9em;
+        text-align: center;
+        margin-top: 10px;
+        color: #666;
+    }
+    #footer {
+        top: 3700px;
+        flex-direction: column;
+    }
+
+    .footer-link {
+        margin: 10px 0;
+    }
+    .category-buttons{
+        margin-left:0px;
     }
 }
 
-.footerText{
-  margin-top: 2px;
+/* 📱 Responsive for Small Screens (Phones - max-width: 480px) */
+@media screen and (max-width: 480px) {
+    body{
+        overflow-x: hidden;
+    }
+    .header-title {
+        font-size: 1.2em;
+    }
+
+    .header-link {
+        font-size: 0.6em;
+    }
+    /* 🔹 Header */
+    #header {
+        padding: 10px;
+    }
+
+    .headerText {
+        font-size: 1.2em; /* Smaller font size for phones */
+        text-align: center;
+    }
+
+    /* 🔹 About */
+
+    /* 🔹 Skills */
+    #skilldiv{
+        height:600px;
+    }
+    .skillList {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    /* 🔹 Projects */
+     #aboutdiv {
+        margin-bottom: 20px; /* Smaller gap for phones */
+    }
+
+    #projectdiv {
+        margin-top: 20px; /* ✅ Ensures it doesn’t overlap */
+        padding: 10px;
+    }
+
+    .project {
+        width: 95%;
+        height:auto;
+        padding: 12px;
+    }
+
+    .project img {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    #projectTitle {
+        margin-top: 300px;
+    }
+
+    .projectDescription {
+        font-size: 0.95em;
+    }
+    /* 🔹 Contact / Footer */
+    #footer {
+        top: 3750px;
+    }
+    #picContainer {
+        width: 65%;
+        height: 30%;
+        margin-top: 80px;
+    }
+
 }
